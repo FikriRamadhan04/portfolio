@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikri Ramadhan - Full Stack Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/src/style.css" rel="stylesheet">
+
+    
+</head>
+<body class="font-inter bg-white text-gray-800 overflow-x-hidden">
+    <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 relative">
+
+        <!-- Logo -->
+        <div class="font-bold text-xl text-blue-600">Fikri Ramadhan</div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+          <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
+          <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4 pb-4 border-t border-gray-200">
+        <div class="md:hidden flex flex-col space-y-4 mt-7 pb-4 justify-center border-gray-200">
+        <a href="#home" class="block text-gray-700 hover:text-blue-600 px-2">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-blue-600 px-2">About</a>
+        <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 px-2">Portfolio</a>
+        <a href="#contact" class="block text-gray-700 hover:text-blue-600 px-2">Contact</a>
+        </div>
+       
+      </div>
+
+    </div>
+  </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="pt-20 pb-16 min-h-screen flex items-center ">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-section">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-4"  class="p-4 bg-white shadow rounded "  
+                    data-aos="fade-right" 
+                    data-aos-delay="250" 
+                   data-aos-duration="1000" >
+                        Hi, I'm <span class="text-[#2563eb]">Fikri Ramadhan</span>
+                    </h1>
+
+                    
+                    <h2 class="text-xl lg:text-2xl text-gray-600 mb-4" 
+                    data-aos="fade-right" 
+                    data-aos-delay="200" 
+                   data-aos-duration="1000">Full Stack Web Developer</h2>
+                    <p class="text-lg text-gray-500 mb-2" 
+                    data-aos="fade-right" 
+                    data-aos-delay="150" 
+                   data-aos-duration="1000">📍 Jakarta, Indonesia</p>
+                    <p class="text-gray-600 mb-8 max-w-lg" 
+                     data-aos="fade-right" 
+                    data-aos-delay="150" 
+                   data-aos-duration="1000">
+                        Passionate about creating beautiful, functional web applications with modern technologies. 
+                        Let's build something amazing together!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <button   class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors" 
+                        data-aos="fade-right" 
+                    data-aos-delay="100" 
+                   data-aos-duration="1000">
+                        <a href="https://wa.me/62895326435327" target="_blank"> Contact Me
+                        </a>
+                        <button   class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors" 
+                        data-aos="fade-right" 
+                    data-aos-delay="100" 
+                   data-aos-duration="1000">
+                        <a href="#" target="_blank"> Downlod CV
+                        </a>
+                       
+                        
+                    </div>
+                </div>
+                <div class="flex justify-center relative">
+                 <img src="foto-profil.png" alt="foto profil" class="w-80 h-auto" 
+                    data-aos="fade-right" 
+                    data-aos-delay="100" 
+                   data-aos-duration="1000">
+                   
+                    
+                     
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+            <div class="text-center mb-14  ">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4" 
+                    data-aos="fade-down" 
+                    data-aos-delay="270" 
+                   data-aos-duration="1000">About Me</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto"
+                data-aos="fade-down" 
+                    data-aos-delay="230" 
+                   data-aos-duration="1000">
+                    Get to know more about my background, skills, and passion for web development
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="flex justify-center">
+                   <div class="flex justify-center  relative" data-aos="fade-left" 
+                    data-aos-delay="230" 
+                   data-aos-duration="1000">
+                    
+                      <model-viewer 
+                        src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" 
+                        alt="3D Robot" 
+                        auto-rotate 
+                        camera-controls 
+                        interaction-prompt="none"
+                        style="width: 200px; height: 200px;" 
+                        class="rounded-xl">
+                      </model-viewer>
+                  </div>
+</div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6"
+                    data-aos="fade-left" 
+                    data-aos-delay="230" 
+                   data-aos-duration="1000">Full Stack Web Developer</h3>
+                    <p class="text-gray-600 mb-6"
+                     data-aos="fade-left" 
+                    data-aos-delay="230" 
+                   data-aos-duration="1000">
+                        I am a full-stack web developer specializing in building modern web applications.
+                        With expertise in both front-end and back-end development, I can develop comprehensive and efficient web solutions.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8" 
+                    data-aos="fade-left" 
+                    data-aos-delay="200" 
+                   data-aos-duration="1000">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-[#2563eb] mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            <span>Jakarta, Indonesia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-[#2563eb] mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                            </svg>
+                            <span>fikriramadhan1152@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-[#2563eb] mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            <span>0895326435327</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-[#2563eb] mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zM12 13l-7-3.18v2.36l7 3.18 7-3.18v-2.36L12 13zM12 15.71L5 12.81v4.87L12 21l7-3.32v-4.88l-7 2.91z"/>
+  </svg>
+                            <span>Universitas Pamulang</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills -->
+                    <div data-aos="fade-left" 
+                    data-aos-delay="170" 
+                   data-aos-duration="1000">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Technical Skills</h4>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">HTML & CSS</span>
+                                    <span class="text-sm text-gray-500">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-[#2563eb] h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">JavaScript</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-[#2563eb] h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Tailwind CSS</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-[#2563eb] h-2 rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">MySQL</span>
+                                    <span class="text-sm text-gray-500">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-[#2563eb] h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="pt-20 pb-16 min-h-screen flex items-center overflow-x-hidden">
+        <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 lg:items-center">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4"  
+                data-aos="fade-down" 
+                    data-aos-delay="270" 
+                   data-aos-duration="1000">My Portfolio</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto"  
+                data-aos="fade-down" 
+                    data-aos-delay="270" 
+                   data-aos-duration="1000">
+                    Here are some of my recent projects that showcase my skills and experience
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full"  
+            data-aos="fade-down" 
+                    data-aos-delay="200" 
+                   data-aos-duration="1000">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+  <div class="h-48 overflow-hidden">
+    <img src="porto-1.png" alt="Project Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+  </div>
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Simple CRUD: Clinic Patient Data</h3>
+    <p class="text-gray-600 mb-4">Simple CRUD web application to manage clinic patient data using Java and MySQL</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">Java</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">MySql</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">NetBeans</span>
+    </div>
+    <button class="text-[#2563eb] hover:text-[#1d4ed8] font-medium">View Project →</button>
+  </div>
+</div>
+
+                
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+  <div class="h-48 bg-gray-200 flex items-center justify-center">
+  <span class="text-gray-500 text-xl font-semibold">Soon</span>
+</div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Company Profile Website</h3>
+    <p class="text-gray-600 mb-4">Responsive website showcasing company info, services, team, and contact form.</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">HTML</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">Tailwind CSS </span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">JavaScript</span>
+    </div>
+    <button class="text-[#2563eb] hover:text-[#1d4ed8] font-medium">View Project →</button>
+  </div>
+</div>
+                
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+  <div class="h-48 bg-gray-200 flex items-center justify-center">
+  <span class="text-gray-500 text-xl font-semibold">Soon</span>
+</div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">TaskMaster - To-Do App with Authentication</h3>
+    <p class="text-gray-600 mb-4">To-do app with user login, task CRUD, and real-time updates.</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">JavaScript</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">Node.js</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">MySQL</span>
+    </div>
+    <button class="text-[#2563eb] hover:text-[#1d4ed8] font-medium">View Project →</button>
+  </div>
+</div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+  <div class="h-48 bg-gray-200 flex items-center justify-center">
+  <span class="text-gray-500 text-xl font-semibold">Soon</span>
+</div>
+
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Investing Calculator</h3>
+    <p class="text-gray-600 mb-4">Calculates investment returns with user inputs and stores data.</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">React.js</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">Laravel</span>
+      <span class="px-3 py-1 bg-[#dbeafe] text-[#2563eb] text-sm rounded-full">MySQL</span>
+    </div>
+    <button class="text-[#2563eb] hover:text-[#1d4ed8] font-medium">View Project →</button>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4"
+       data-aos="fade-down" 
+    data-aos-delay="270" 
+    ata-aos-duration="1000">Get In Touch</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto"
+       data-aos="fade-down" 
+        data-aos-delay="270" 
+        data-aos-duration="1000">
+        Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+      </p>
+    </div>
+
+    <!-- FLEX WRAPPER -->
+    <div class="flex flex-col lg:flex-row gap-12">
+
+      <!-- CONTACT INFO -->
+      <div class="w-full lg:w-1/2"  
+      data-aos="fade-right" 
+         data-aos-delay="200" 
+        data-aos-duration="1000">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+        <div class="space-y-6">
+          
+          <!-- Email -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-[#2563eb] rounded-lg flex items-center justify-center mr-4 hover:scale-110 transition">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">Email</h4>
+              <p class="text-gray-600">fikriramadhan1152@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-[#2563eb] rounded-lg flex items-center justify-center mr-4 hover:scale-110 transition">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.85 11.85 0 001.63 6.02L0 24l6.18-1.6A11.91 11.91 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.21-3.48-8.52zM12 21.6a9.46 9.46 0 01-4.84-1.44l-.35-.21-3.67.95.98-3.58-.23-.37A9.45 9.45 0 012.4 12c0-5.21 4.22-9.44 9.44-9.44 2.52 0 4.89.98 6.67 2.76a9.324 9.324 0 012.77 6.68c0 5.22-4.23 9.44-9.44 9.44z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">WhatsApp</h4>
+              <p class="text-gray-600">0895326435327</p>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-[#2563eb] rounded-lg flex items-center justify-center mr-4 hover:scale-110 transition">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.34.7-4-1.6-4-1.6-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.66-.3-5.47-1.3-5.47-5.9 0-1.3.47-2.4 1.23-3.2-.12-.3-.53-1.5.12-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.65 1.7.24 2.9.12 3.2.77.8 1.23 1.9 1.23 3.2 0 4.6-2.8 5.6-5.47 5.9.43.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">GitHub</h4>
+              <p class="text-gray-600">github.com/FikriRamadhan04</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+     <div class="w-full lg:w-1/2"
+     data-aos="fade-right" 
+     data-aos-delay="200" 
+     data-aos-duration="1000">
+  <form id="contact-form" class="space-y-6">
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+      <input type="text" id="name" name="user_name" required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent">
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+      <input type="email" id="email" name="user_email" required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent">
+    </div>
+
+    <div>
+      <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+      <textarea id="message" name="message" rows="5" required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563eb] focus:border-transparent"></textarea>
+    </div>
+
+    <button type="submit"
+      class="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white py-3 px-6 rounded-lg font-medium transition">
+      Send Message
+    </button>
+  </form>
+</div>
+
+
+
+</section>
+
+    <!-- Footer -->
+   <footer class="bg-black text-white py-10 weight-100%">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+
+    <!-- Kiri: Nama dan Deskripsi -->
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-xl font-bold">Fikri Ramadhan</h2>
+      <p class="text-gray-400 text-sm mt-1">Full Stack Developer</p>
+    </div>
+
+    <!-- Tengah: Navigasi -->
+    <div class="flex-1">
+      <ul class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 text-sm text-gray-400">
+        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition">About</a></li>
+        <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Kanan: Sosmed dan Email -->
+    <div class="flex-1 text-center md:text-right space-y-3">
+      <div class="flex justify-center md:justify-end space-x-5">
+        <!-- GitHub -->
+        <a href="https://github.com/username" class="hover:text-gray-400" target="_blank">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.34.7-4-1.6-4-1.6-.5-1.1-1.2-1.4-1.2-1.4-1-.7 0-.7.1-.7 1.1.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.66-.3-5.47-1.3-5.47-5.9 0-1.3.47-2.4 1.23-3.2-.12-.3-.53-1.5.12-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.65 1.7.24 2.9.12 3.2.77.8 1.23 1.9 1.23 3.2 0 4.6-2.8 5.6-5.47 5.9.43.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/username" class="hover:text-gray-400" target="_blank">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"> <path d="M7.75 2C4.679 2 2 4.679 2 7.75v8.5C2 19.321 4.679 22 7.75 22h8.5c3.071 0 5.75-2.679 5.75-5.75v-8.5C22 4.679 19.321 2 16.25 2h-8.5zm0 1.5h8.5c1.227 0 2.25 1.023 2.25 2.25v8.5c0 1.227-1.023 2.25-2.25 2.25h-8.5c-1.227 0-2.25-1.023-2.25-2.25v-8.5c0-1.227 1.023-2.25 2.25-2.25zm4.25 2.25a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 1.5a3 3 0 110 6 3 3 0 010-6zm3.75-.75a1.125 1.125 0 11-2.25 0 1.125 1.125 0 012.25 0z"/></svg>
+        </a>
+      </div>
+      <p class="text-sm text-gray-400">
+        Email: <a href="mailto:fikriramadhan1152@gmail.com" class="underline hover:text-white">fikriramadhan1152@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-8 text-center text-xs text-gray-600">
+    &copy; 2025 Fikri Ramadhan. All rights reserved.
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+<script type="module" src="/src/main.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script>
+  (function(){
+    function c(){
+      var b=a.contentDocument||a.contentWindow.document;
+      if(b){
+        var d=b.createElement('script');
+        d.innerHTML="window.__CF$cv$params={r:'9675660d7031fcea',t:'MTc1Mzg4NDE5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+        b.getElementsByTagName('head')[0].appendChild(d)
+      }
+    }
+    if(document.body){
+      var a=document.createElement('iframe');
+      a.height=1;
+      a.width=1;
+      a.style.position='absolute';
+      a.style.top=0;
+      a.style.left=0;
+      a.style.border='none';
+      a.style.visibility='hidden';
+      document.body.appendChild(a);
+      if('loading'!==document.readyState)c();
+      else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);
+      else{
+        var e=document.onreadystatechange||function(){};
+        document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}
+      }
+    }
+  })();
+</script>
+
+</body>
+</html>
