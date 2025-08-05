@@ -32,31 +32,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // Contact form submission
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+ const form = document.getElementById('contact-form');
 
-  const name = form.user_name.value.trim();
-  const email = form.user_email.value.trim();
-  const message = form.message.value.trim();
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-  if (!name || !email || !message) {
-    alert('Please fill in all fields');
-    return;
-  }
+    const name = form.user_name.value.trim();
+    const email = form.user_email.value.trim();
+    const message = form.message.value.trim();
 
-  console.log("Sending form...");
+    if (!name || !email || !message) {
+      alert('Please fill in all fields');
+      return;
+    }
 
-  emailjs.sendForm('service_gv7b0il', 'template_jwlrv1f', form)
-    .then((res) => {
-      console.log("Success:", res.status, res.text);
-      alert('Thank you for your message! I will get back to you soon.');
-      form.reset();
-    })
-    .catch((error) => {
-      alert('Failed to send message. Please try again.');
-      console.error('EmailJS error:', error);
-    });
-});
+    console.log("Sending form...");
+
+    emailjs.sendForm('service_gv7b0il', 'template_jwlrv1f', form)
+      .then((res) => {
+        console.log("Success:", res.status, res.text);
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+      })
+      .catch((error) => {
+        alert('Failed to send message. Please try again.');
+        console.error('EmailJS error:', error);
+      });
+  });
 
 
 
