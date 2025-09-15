@@ -27,6 +27,10 @@
           <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
         </div>
 
+
+
+ 
+
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="md:hidden p-2 focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,15 +42,13 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4 pb-4 border-t border-gray-200">
-        <div class="md:hidden flex flex-col space-y-4 mt-7 pb-4 justify-center border-gray-200">
-        <a href="#home" class="block text-gray-700 hover:text-blue-600 px-2">Home</a>
-        <a href="#about" class="block text-gray-700 hover:text-blue-600 px-2">About</a>
-        <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 px-2">Portfolio</a>
-        <a href="#contact" class="block text-gray-700 hover:text-blue-600 px-2">Contact</a>
-        </div>
-       
-      </div>
+      <div id="mobile-menu" class="hidden flex-col space-y-4 mt-7 pb-4 border-t border-gray-200 md:hidden">
+  <a href="#home" class="block text-gray-700 hover:text-blue-600 px-2">Home</a>
+  <a href="#about" class="block text-gray-700 hover:text-blue-600 px-2">About</a>
+  <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 px-2">Portfolio</a>
+  <a href="#contact" class="block text-gray-700 hover:text-blue-600 px-2">Contact</a>
+</div>
+
 
     </div>
   </nav>
@@ -57,7 +59,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="fade-in-section">
-                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-4"  class="p-4 bg-white shadow rounded "  
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-4 p-4 bg-white shadow rounded"
                     data-aos="fade-right" 
                     data-aos-delay="250" 
                    data-aos-duration="1000" >
@@ -80,31 +82,42 @@
                         Passionate about creating beautiful, functional web applications with modern technologies. 
                         Let's build something amazing together!
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                        <button   class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white focus:bg-[#2563eb] focus:text-white active:bg-[#2563eb] active:text-white px-8 py-3 rounded-lg font-medium transition-colors" 
-                        data-aos="fade-right" 
-                    data-aos-delay="100" 
-                   data-aos-duration="1000">
-                        <a href="https://wa.me/62895326435327" target="_blank"> Contact Me</a>
-                        <button   class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors" 
-                        data-aos="fade-right" 
-                    data-aos-delay="100" 
-                   data-aos-duration="1000">
-                        <a href="#" target="_blank"> Download CV
-                        </a>
-                       
-                        
-                    </div>
+                  <div class="flex flex-col sm:flex-row gap-2">
+  <a 
+    href="https://wa.me/62895326435327" 
+    target="_blank"
+    class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white focus:bg-[#2563eb] focus:text-white active:bg-[#2563eb] active:text-white px-8 py-3 rounded-lg font-medium transition-colors"
+    data-aos="fade-right" 
+    data-aos-delay="100" 
+    data-aos-duration="1000"
+  >
+    Contact Me
+  </a>
+
+      <a 
+    href="#" 
+    target="_blank"
+    class="border border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white px-8 py-3 rounded-lg font-medium transition-colors"
+    data-aos="fade-right" 
+    data-aos-delay="100" 
+    data-aos-duration="1000"
+  >
+    Download CV
+  </a>
+</div>   
                 </div>
-                <div class="flex justify-center relative">
-                 <img src="foto-profil.png" alt="foto profil" class="w-80 h-auto" 
-                    data-aos="fade-right" 
-                    data-aos-delay="100" 
-                   data-aos-duration="1000">
-                   
-                    
-                     
-                  </div>
+<div class="flex justify-center relative">
+  <img 
+    src="foto-profil.png" 
+    alt="foto profil" 
+    class="w-80 h-auto"
+    data-aos="fade-right"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+  >
+</div>
+
+
                 </div>
             </div>
         </div>
@@ -228,9 +241,9 @@
                                  <div class="w-full bg-gray-200 rounded-full h-2">
                                                     <div class="bg-[#2563eb] h-2 rounded-full" style="width: 80%"></div>
                                 </div>
+                                
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -240,8 +253,8 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="pt-20 pb-16 min-h-screen flex items-center overflow-x-hidden">
-        <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 lg:items-center">
+          <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 lg:items-center">
                 <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4"  
                 data-aos="fade-down" 
                     data-aos-delay="270" 
@@ -337,7 +350,7 @@
       <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4"
        data-aos="fade-down" 
     data-aos-delay="270" 
-    ata-aos-duration="1000">Get In Touch</h2>
+    data-aos-duration="1000">Get In Touch</h2>
       <p class="text-gray-600 max-w-2xl mx-auto"
        data-aos="fade-down" 
         data-aos-delay="270" 
@@ -434,7 +447,7 @@
 </section>
 
     <!-- Footer -->
-   <footer class="bg-black text-white py-10 weight-100%">
+   <footer class="bg-black text-white py-10 w-full">
   <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
 
     <!-- Kiri: Nama dan Deskripsi -->
@@ -528,6 +541,4 @@
     }
   })();
 </script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</body>
 </html>

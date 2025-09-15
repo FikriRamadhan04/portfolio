@@ -1,40 +1,56 @@
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+
+// Inisialisasi EmailJS
 emailjs.init("t2NXpGgcpZSMiWu34");
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  const Mobilemenubtn = document.getElementById('mobile-menu-btn');
-  const Mobilemenu = document.getElementById('mobile-menu');
+  initMobileMenu();
+  initSmoothScroll();
+  initContactForm();
+  initNavbarShadow();
+  initSkillBars();
+  initDarkModeToggle();
+});
 
-  const mobilemenuBtn = document.getElementById('mobile-menu-btn');
-  const mobilemenu = document.getElementById('mobile-menu');
+/* ======= Mobile Menu ======= */
+function initMobileMenu() {
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  if (Mobilemenubtn && mobilemenu) {
-    Mobilemenubtn.addEventListener('click', () => {
-      Mobilemenu.classList.toggle('hidden');
-      console.log("Burger menu toggle clicked");
-    });
-  }
+  if (!mobileMenuBtn || !mobileMenu) return;
 
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    console.log("Burger menu toggled");
+  });
+}
+
+/* ======= Smooth Scrolling ======= */
+function initSmoothScroll() {
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const target = document.querySelector(anchor.getAttribute("href"));
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if (Mobilemenu && !Mobilemenu.classList.contains('hidden')) {
-          Mobilemenu.classList.add('hidden'); // tutup menu mobile setelah klik link
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // Tutup menu mobile setelah klik link
+        if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
         }
       }
     });
   });
+}
 
+/* ======= Contact Form ======= */
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
 
-  // Contact form submission
- const form = document.getElementById('contact-form');
-
-  form.addEventListener('submit', (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const name = form.user_name.value.trim();
@@ -42,59 +58,62 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = form.message.value.trim();
 
     if (!name || !email || !message) {
-      alert('Please fill in all fields');
+      alert("Please fill in all fields");
       return;
     }
 
     console.log("Sending form...");
 
-    emailjs.sendForm('service_gv7b0il', 'template_jwlrv1f', form)
+    emailjs
+      .sendForm("service_gv7b0il", "template_jwlrv1f", form)
       .then((res) => {
         console.log("Success:", res.status, res.text);
-        alert('Thank you for your message! I will get back to you soon.');
+        alert("Thank you for your message! I will get back to you soon.");
         form.reset();
       })
       .catch((error) => {
-        alert('Failed to send message. Please try again.');
-        console.error('EmailJS error:', error);
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS error:", error);
       });
   });
+}
 
+/* ======= Navbar Shadow on Scroll ======= */
+function initNavbarShadow() {
+  const navbar = document.querySelector("nav"); // sesuaikan selector dengan navbar kamu
+  if (!navbar) return;
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      navbar.classList.add("shadow-lg");
+    } else {
+      navbar.classList.remove("shadow-lg");
+    }
+  });
+}
 
+/* ======= Animate Skill Bars ======= */
+function initSkillBars() {
+  const aboutSection = document.getElementById("about");
+  if (!aboutSection) return;
 
-  // Navbar shadow on scroll
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        navbar.classList.add('shadow-lg');
-      } else {
-        navbar.classList.remove('shadow-lg');
-      }
-    });
-  }
-
-  // Animate skill bars when in view
   const observerOptions = {
     threshold: 0.5,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: "0px 0px -100px 0px",
   };
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const skillBars = entry.target.querySelectorAll('.bg-blue-primary');
-        skillBars.forEach(bar => {
-          bar.style.transformOrigin = 'left';
-          bar.style.transition = 'transform 1s ease-in-out';
-          bar.style.transform = 'scaleX(1)';
+        const skillBars = entry.target.querySelectorAll(".bg-blue-primary");
+        skillBars.forEach((bar) => {
+          bar.style.transformOrigin = "left";
+          bar.style.transition = "transform 1s ease-in-out";
+          bar.style.transform = "scaleX(1)";
         });
       }
     });
   }, observerOptions);
 
-  const aboutSection = document.getElementById('about');
-  if (aboutSection) {
-    observer.observe(aboutSection);
-  }
-});
+  observer.observe(aboutSection);
+}
