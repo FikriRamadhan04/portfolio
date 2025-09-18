@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initNavbarShadow();
   initSkillBars();
-  initDarkModeToggle();
 });
 
 /* ======= Mobile Menu ======= */
@@ -80,7 +79,7 @@ function initContactForm() {
 
 /* ======= Navbar Shadow on Scroll ======= */
 function initNavbarShadow() {
-  const navbar = document.querySelector("nav"); // sesuaikan selector dengan navbar kamu
+  const navbar = document.querySelector("nav");
   if (!navbar) return;
 
   window.addEventListener("scroll", () => {

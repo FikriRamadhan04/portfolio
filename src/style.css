@@ -7,3 +7,7 @@
   z-index: 1000;
   animation: bounce 2s infinite;
 }
+
+#toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
